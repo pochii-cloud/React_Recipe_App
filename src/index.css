@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.heading{
+  color: black;
+  margin-top: 65px;
+  margin-bottom: -50px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin: 70px 10px 30px 10px ;
 }
+.card{
+  margin: 20px 10px;
+}
+.card-title{
+  font-weight: bold;
+}
+.footer{
+  width: 100%;
+}
+.tel{
+  text-decoration-line: none;
+}
+@media screen and (max-width:769px) {
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 50px;
+  }
+  
+}
+
+@media screen and (max-width:400px) {
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 50px;
+  }
+  
+}
+
+
+
+
+
+
+/* <form className="d-flex" role="search" onSubmit={searchQuery}>
+      <input className="form-control me-2" type="search" placeholder="Search Recipe" aria-label="Search" value={search} onChange={(e)=>setSearch(e.target.value)}/>
+      <button className="btn btn-outline-success" type="submit">Search</button>
+    </form> */
+
+
+
